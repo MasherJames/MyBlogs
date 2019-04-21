@@ -5,6 +5,7 @@ import AddBlog from "./components/AddBlog";
 import Blogs from "./components/Blogs";
 import Landing from "./components/Landing.js";
 import NotFound from "./components/NotFound";
+import SingleBlog from "./components/SingleBlog"
 
 export default () => {
   return (
@@ -14,6 +15,7 @@ export default () => {
         <Route exact path="/" component={Landing} />
         <Route path="/create-blog" component={AddBlog} />
         <Route path="/blogs" component={Blogs} />
+        <Route path="/blog/:id" component={SingleBlog} />
         <Route component={NotFound} />
       </Switch>
     </Router>

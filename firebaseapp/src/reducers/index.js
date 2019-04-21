@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
-import AddReducer from "./AddBlogReducer";
+import AddBlogReducer from "./AddBlogReducer";
+import { firestoreReducer } from "redux-firestore";
 
 export default combineReducers({
-  AddReducer
+  blogs: AddBlogReducer,
+  firestore: firestoreReducer
 });
